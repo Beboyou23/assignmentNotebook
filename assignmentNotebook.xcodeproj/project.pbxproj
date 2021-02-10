@@ -13,6 +13,7 @@
 		3F24B05D25D1A7350057043F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F24B05C25D1A7350057043F /* Preview Assets.xcassets */; };
 		3F24B06825D1A7350057043F /* assignmentNotebookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F24B06725D1A7350057043F /* assignmentNotebookTests.swift */; };
 		3F24B07325D1A7350057043F /* assignmentNotebookUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F24B07225D1A7350057043F /* assignmentNotebookUITests.swift */; };
+		3F24B08C25D3A29F0057043F /* AssignmentList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F24B08B25D3A29F0057043F /* AssignmentList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		3F24B06E25D1A7350057043F /* assignmentNotebookUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = assignmentNotebookUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F24B07225D1A7350057043F /* assignmentNotebookUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = assignmentNotebookUITests.swift; sourceTree = "<group>"; };
 		3F24B07425D1A7350057043F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F24B08B25D3A29F0057043F /* AssignmentList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssignmentList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 			children = (
 				3F24B05525D1A72F0057043F /* assignmentNotebookApp.swift */,
 				3F24B05725D1A72F0057043F /* ContentView.swift */,
+				3F24B08B25D3A29F0057043F /* AssignmentList.swift */,
 				3F24B05925D1A7350057043F /* Assets.xcassets */,
 				3F24B05E25D1A7350057043F /* Info.plist */,
 				3F24B05B25D1A7350057043F /* Preview Content */,
@@ -259,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F24B08C25D3A29F0057043F /* AssignmentList.swift in Sources */,
 				3F24B05825D1A72F0057043F /* ContentView.swift in Sources */,
 				3F24B05625D1A72F0057043F /* assignmentNotebookApp.swift in Sources */,
 			);
