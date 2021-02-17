@@ -52,11 +52,12 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
-struct AssignmentItem: Identifiable {
+struct AssignmentItem: Identifiable, Codable {
     var id = UUID()
     var course = String()
     var  description = String()
     var dueDate = Date()
 }
+
 
 
