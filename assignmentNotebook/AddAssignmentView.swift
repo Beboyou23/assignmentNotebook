@@ -9,17 +9,17 @@ import SwiftUI
 
 struct AddAssignmentView: View {
     @ObservedObject var assignmentList: AssignmentList
-    @State private var priority = ""
+    @State private var course = ""
     @State private var description = ""
     @State private var dueDate = Date()
     @Environment(\.presentationMode) var presentationMode
-    static let priorites = ["High", "Medium", "Low"]
+    static let courses = ["Math", "Science", "English", "Programming", "History", "Language arts"]
     
     var body: some View {
         NavigationView {
             Form {
-                Picker("Priority", selection: $priority){
-                    ForEach(Self.priorites, id: \.self) { priority in Text(priority)
+                Picker("Course", selection: $course){
+                    ForEach(Self.courses, id: \.self) { course in Text(course)
                     }
                 }
                 TextField("Description", text: $description)
@@ -27,8 +27,9 @@ struct AddAssignmentView: View {
             }
             .navigationBarTitle("Add New Assignment Item")
             .navigationBarItems(trailing: Button("Save"){
-                if(priority.count > 0 && description.count > 0) {
+                if(course.count > 0 && description.count > 0) {
                     let item = AssignmentItem(id:UUID(),
+                                              course: course,
                                         description: description,
                                         dueDate: dueDate)
                     assignmentList.items.append(item)
